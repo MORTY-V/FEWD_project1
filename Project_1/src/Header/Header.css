@@ -1,0 +1,9 @@
+#headerBar {
+  display: flex;
+  border-radius: 1.75em;
+  justify-content: left;
+  background-color: white;
+  padding-left: 2em;
+  font-size: 1.3em;
+  color: #2c2c2c;
+}

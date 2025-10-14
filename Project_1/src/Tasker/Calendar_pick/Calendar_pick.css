@@ -1,0 +1,95 @@
+/* Input / wrapper styling */
+.react-datepicker__input-container input, .react-datepicker-wrapper input{ 
+    width: 10em;
+    padding: 0.6em 0.75em;
+    border: 0.075em solid #d1d5db; 
+    border-radius: 0.45em;
+    font-size: 1.05em; 
+    color: #111827;
+}
+
+.react-datepicker__input-container input:focus,
+.react-datepicker-wrapper input:focus,
+.react-datepicker__input-container input:focus-visible,
+.react-datepicker-wrapper input:focus-visible {
+    outline: none;
+    border-color: #d1d5db;
+}
+
+/* Calendar container (popup) */
+.react-datepicker {
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    border-radius: 0.75em; 
+    box-shadow: 0 0.75em 2.25em rgba(2,6,23,0.12); 
+    border: 0;
+    padding: 0.6em; 
+}
+
+/* Header (month) */ 
+.react-datepicker__header { 
+    background: #f8fafc; 
+    border-bottom: none; 
+    padding-top: 0.9em; 
+    padding-bottom: 0.45em; 
+} 
+
+.react-datepicker__current-month { 
+    font-weight: 600; 
+    color: #0f172a; 
+}
+
+/* Navigation arrows */ 
+.react-datepicker__navigation { 
+    top: 0.75em; 
+} 
+
+.react-datepicker__navigation--previous { 
+    left: 0.75em; 
+} 
+
+.react-datepicker__navigation--next { 
+    right: 0.75em; 
+}
+
+/* Grid / days */ 
+.react-datepicker__month { 
+    margin: 0.45em 0; 
+} 
+
+.react-datepicker__day-name, .react-datepicker__day {
+    width: 2.7em; 
+    height: 2.7em; 
+    line-height: 2.7em; 
+    margin: 0.15rem; 
+    font-size: 0.975em; 
+    }
+
+/* Hover and selected states */ 
+.react-datepicker__day:hover { 
+    background-color: rgba(59,130,246,0.08); 
+    border-radius: 50%; 
+} 
+    
+.react-datepicker__day--selected, .react-datepicker__day--keyboard-selected { 
+    background-color: #3b82f6; 
+    color: white; 
+    border-radius: 50%; 
+}
+
+/* Today highlight */ 
+.react-datepicker__day--today { 
+    font-weight: 600; 
+    border: 0.075em dashed #60a5fa; 
+    border-radius: 50%; 
+}
+
+/* popup z-index if it appears underneath other elements */ 
+.react-datepicker-popper { 
+    z-index: 2000; 
+}
+
+/* Time container (if using times) */ 
+.react-datepicker__time-container { 
+    border-left: 0.075em solid #e6e6e6; 
+    padding-left: 0.75em; 
+}
