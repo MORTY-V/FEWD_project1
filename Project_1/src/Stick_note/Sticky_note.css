@@ -1,0 +1,65 @@
+
+.sticky-note {
+  background: #fff68f;
+  padding: 1rem;
+  margin: 0.75rem;
+  width: 200px;
+  min-height: 100px;
+  border-radius: 10px;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+  transform: rotate(-1deg);
+  transition: transform 0.15s ease, box-shadow 0.2s ease, opacity 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sticky-note:hover {
+  transform: rotate(0deg) scale(1.03);
+  box-shadow: 4px 8px 12px rgba(0, 0, 0, 0.25);
+}
+
+.sticky-note.completed {
+  background: #d3d3d3; /* greyed out */
+  opacity: 0.7;
+}
+
+
+.sticky-text {
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 1rem;
+  color: #333;
+  margin: 0;
+  word-wrap: break-word;
+}
+
+.sticky-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+
+.circle-btn {
+  width: 30px;             
+  height: 30px;
+  border-radius: 50%;       
+  border: 2px solid #555;  
+  background: transparent;
+  cursor: pointer;
+  flex-shrink: 0;         
+  display: inline-block; 
+  box-sizing: border-box; 
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+
+.circle-btn:hover {
+  background-color: #3fa34d33;
+  transform: scale(1.1);
+}
+
+.circle-btn.active {
+  background-color: #3fa34d;
+  border-color: #3fa34d;
+}
+
