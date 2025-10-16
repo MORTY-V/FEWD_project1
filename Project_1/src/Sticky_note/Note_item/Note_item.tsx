@@ -26,7 +26,7 @@ type NoteItemProps = {
   };
 
 //possible parent state
-
+//
 /*
 
 const handleToggle = (id: number) => {

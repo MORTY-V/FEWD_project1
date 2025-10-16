@@ -122,7 +122,7 @@ export const HamburgerMenu = ({ noteId, onClose, onDelete, onAddItem, onEditItem
 };
 
 // Parent component example
-
+//
 /*
 export default function StickyNoteApp() {
   const [notes, setNotes] = useState([
