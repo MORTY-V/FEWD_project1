@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import { Tasker } from './Tasker/Tasker'
 import './App.css'
 import HeaderBar from './Header/Header'
 import NewNote from './Tasker/Tasker'
