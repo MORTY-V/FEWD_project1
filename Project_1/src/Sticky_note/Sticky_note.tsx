@@ -17,7 +17,7 @@ export default function CreatedNote({ title, description, date }: CreatedNotePro
     return (
         <div id="note" className={isCompleted ? 'completed' : ''}>
             <div className='sticky-top'></div>
-            <h1 id="title">{title}</h1>
+            <h1 className="title">{title}</h1>
             <h2 id="description">{description}</h2>
             {date ? <div id="note-date">{new Date(date).toLocaleDateString()}</div> : null}
             <button id="complete" onClick={handleComplete}></button>

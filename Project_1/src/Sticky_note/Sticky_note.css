@@ -10,6 +10,7 @@
     transition: all 0.3s ease;
     margin: 15px;
      border-radius: .2em;
+    
 }
 
 #note:hover {
@@ -35,7 +36,7 @@
     color: #333;
     margin: 10px 0;
     word-wrap: break-word;
-     display: flex;
+    display: flex;
     align-items: center;
     justify-content: center;
 }

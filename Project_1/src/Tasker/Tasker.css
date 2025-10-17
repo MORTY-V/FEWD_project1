@@ -2,14 +2,13 @@ input{
     border: 1px solid #ccc;     
     border-radius: 0.4em;
     background-color: transparent;
-     padding: 0.5em 0.75em;  
+    padding: 0.5em 0.75em;  
     padding: 0.5em 0.75em 0.25em 0em;
     font-size: 2em;
     width: 90%;
     max-width: 100%;
-
+    padding-left: .5em; 
 }
-
 
 input:focus {
   outline: none;
@@ -18,9 +17,9 @@ input:focus {
 }
 
 input::placeholder {
-    color: #848282;
-    padding-left: .5em;
-    
+    color: #d6d6d6;  
+    font-weight: 100;
+    opacity: 1;
 }
 
 #newNote {
@@ -37,6 +36,12 @@ input::placeholder {
     box-sizing: border-box;
 }
 
+#newNote h3 {
+  margin-bottom: 0.25em; 
+  margin-top: 0.5em;     
+  font-weight: 500;       
+  color: #333;  
+}
 
 #description {
     font-size: 1.25em; 
