@@ -9,8 +9,8 @@
     transform: rotate(-2deg);
     transition: all 0.3s ease;
     margin: 15px;
-     border-radius: .2em;
-    
+    border-radius: .2em;
+    margin-top: 4em;  
 }
 
 #note:hover {
