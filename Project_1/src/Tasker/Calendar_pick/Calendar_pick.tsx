@@ -14,6 +14,7 @@ export default function Calendar({ selectedDate, onDateChange }: CalendarProps) 
             <DatePicker
                 selected={selectedDate}
                 onChange={(date: Date | null) => onDateChange(date)}
+                placeholderText='Select a Date'
             />
         </div>
     );

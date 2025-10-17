@@ -44,6 +44,7 @@ export default function NewNote({ addNote }: NewNoteProps) {
 
     return(
         <div id='newNote'>
+            <h2 id="newNoteHeader">Create a New Task</h2>
             <InputBox name="title" value={inputs.title} onChange={handleChange} placeholder="Title" id="title"/>
             <InputBox name="description" value={inputs.description} onChange={handleChange} placeholder="Description" id="description"/>
             <Calendar selectedDate={selectedDate} onDateChange={setSelectedDate} />

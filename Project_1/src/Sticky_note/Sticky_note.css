@@ -1,15 +1,105 @@
 #note {
-    display: flex;
-    border-radius: 1.75em;
-    background-color: white;
-    color: #2c2c2c;
-    flex-direction: column;
-    padding: 1em 0em 1em 2em;
-    max-width: 25em;
-    min-width: 25em;
-    margin-top: 2em;
+    background: linear-gradient(135deg, #fff740 0%, #fef84d 100%);
+    padding: 20px;
+    width: 250px;
+    min-height: 250px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+    font-family: 'Caveat', 'Comic Sans MS', cursive;
+    transform: rotate(-2deg);
+    transition: all 0.3s ease;
+    margin: 15px;
+     border-radius: .2em;
+}
+
+#note:hover {
+    transform: rotate(0deg) scale(1.05);
+    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.sticky-top {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 25px;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 2px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin: 10px 0;
+    word-wrap: break-word;
+     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #description {
-    font-size: 1.25em;
+    font-size: 18px;
+    color: #444;
+    margin: 15px 0;
+    line-height: 1.4;
+    word-wrap: break-word;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#note-date {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 14px;
+    color: #666;
+    margin: 10px 0;
+    font-style: italic;
+    padding: 3px 8px;
+    padding-bottom: 1em;
+    border-radius: 3px;
+}
+
+#complete {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #4CAF50;
+    border: 3px solid #fff;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#complete:hover {
+    background: #45a049;
+}
+
+#note.completed {
+    opacity: 0.6;
+    background: linear-gradient(135deg, #d3d3d3 0%, #c0c0c0 100%);
+}
+
+#note.completed #title,
+#note.completed #description,
+#note.completed #note-date {
+    text-decoration: line-through;
+    color: #666;
+}
+
+#note.completed #complete {
+    background: #ff9800;
+}
+
+#note.completed #complete:hover {
+    background: #e68900;
 }

@@ -2,7 +2,7 @@ import { useState } from 'react'
 import './App.css'
 import HeaderBar from './Header/Header'
 import NewNote from './Tasker/Tasker'
-import CreatedNote from './Stick_note/Sticky_note'
+import CreatedNote from './Sticky_note/Sticky_note'
 
 
 function App() {
@@ -14,16 +14,6 @@ function App() {
       newNotes.push(notes[i]);
     }
     newNotes.push({ title, description, date: date ? date.toISOString() : null });
-    setNotes(newNotes);
-  };
-
-  const deleteNote = (index: number) => {
-    const newNotes = [];
-    for (let i = 0; i < notes.length; i++) {
-      if (i !== index) {
-        newNotes.push(notes[i]);
-      }
-    }
     setNotes(newNotes);
   };
 
@@ -42,7 +32,6 @@ function App() {
             title={note.title}
             description={note.description}
             date={note.date}
-            onDelete={() => deleteNote(index)}
           />
         ))}
       </div>
