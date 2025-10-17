@@ -2,7 +2,7 @@ import { useState } from 'react'
 import './App.css'
 import HeaderBar from './Header/Header'
 import NewNote from './Tasker/Tasker'
-import CreatedNote from './Stick_note/Sticky_note'
+import CreatedNote from './Sticky_note/Sticky_note'
 
 
 function App() {
