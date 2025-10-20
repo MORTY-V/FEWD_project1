@@ -18,8 +18,14 @@ function InputBox({ value, onChange, placeholder, id, name }: InputBoxProps) {
     );
 }
 
+type Item = {
+    id: number;
+    text: string;
+    completed: boolean;
+};
+
 type NewNoteProps = {
-    addNote: (title: string, description: string, date: Date | null) => void;
+    addNote: (title: string, description: Item[], date: Date | null) => void;
 };
 
 export default function NewNote({ addNote }: NewNoteProps) {
@@ -37,7 +43,12 @@ export default function NewNote({ addNote }: NewNoteProps) {
     };
 
     const handleCreate = () => {
-        addNote(inputs.title, inputs.description, selectedDate);
+
+        const descriptionItems: Item[] = inputs.description.trim() 
+            ? [{ id: Date.now(), text: inputs.description, completed: false }]
+            : [];
+
+        addNote(inputs.title, descriptionItems, selectedDate);
         setInputs({ title: '', description: '' });
         setSelectedDate(null);
     };

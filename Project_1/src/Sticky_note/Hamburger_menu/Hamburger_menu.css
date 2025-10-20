@@ -38,6 +38,7 @@
     background: none;
     font-size: 20px;
     cursor: pointer;
+    color: black;
 }
   
 /* Initial button group (Edit/Delete) */
@@ -51,6 +52,7 @@
     cursor: pointer;
     border: 1px solid #ccc;
     background-color: white;
+    color: black;
     border-radius: 4px;
 }
   
@@ -95,6 +97,7 @@
     cursor: pointer;
     border: 1px solid #ccc;
     background-color: white;
+    color: black;
     border-radius: 4px;
 }
   
@@ -118,6 +121,7 @@
     cursor: pointer;
     border: 1px solid #ccc;
     background-color: white;
+    color: black;
     border-radius: 4px;
 }
   
@@ -125,7 +129,7 @@
     padding: 5px 10px;
     cursor: pointer;
     border: 1px solid #ccc;
-    background-color: white;
+    background-color: #ef4444;
     border-radius: 4px;
 }
   
@@ -135,7 +139,9 @@
     cursor: pointer;
     border: 1px solid #ccc;
     background-color: white;
+    color: black;
     border-radius: 4px;
+    min-width: fit-content;
 }
   
 .item-remove-button {
@@ -145,6 +151,7 @@
     color: white;
     border: none;
     border-radius: 4px;
+    min-width: fit-content;
 }
   
 .done-button {
@@ -153,52 +160,6 @@
     cursor: pointer;
     border: 1px solid #ccc;
     background-color: white;
+    color: black;
     border-radius: 4px;
-}
-  
-/* App container styles (for the demo parent component) */
-.app-container {
-    padding: 20px;
-}
-  
-.notes-grid {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-  
-.sticky-note {
-    background-color: #fef08a;
-    padding: 20px;
-    border-radius: 8px;
-    min-width: 250px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-  
-.note-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 10px;
-}
-  
-.note-header h3 {
-    margin: 0;
-}
-  
-.menu-trigger {
-    background: none;
-    border: none;
-    font-size: 20px;
-    cursor: pointer;
-}
-  
-.note-items {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-  
-.note-items li {
-    margin-bottom: 5px;
 }

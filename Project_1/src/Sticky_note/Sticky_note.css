@@ -104,3 +104,16 @@
 #note.completed #complete:hover {
     background: #e68900;
 }
+
+.Hamburger{
+    position: absolute;
+    top: 15px;
+    right: 50px; /* Adjust this to position it left of the complete button */
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 5px;
+    color: #333;
+    z-index: 10;
+}
