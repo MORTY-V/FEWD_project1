@@ -17,16 +17,6 @@ function App() {
     setNotes(newNotes);
   };
 
-  const deleteNote = (index: number) => {
-    const newNotes = [];
-    for (let i = 0; i < notes.length; i++) {
-      if (i !== index) {
-        newNotes.push(notes[i]);
-      }
-    }
-    setNotes(newNotes);
-  };
-
   return (
     <>
       <div id="headerDiv">
@@ -42,7 +32,6 @@ function App() {
             title={note.title}
             description={note.description}
             date={note.date}
-            onDelete={() => deleteNote(index)}
           />
         ))}
       </div>
