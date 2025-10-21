@@ -17,8 +17,6 @@ type Item = {
     completed: boolean;
 };
 
-let throwAway = 0;
-
 export default function CreatedNote({ title, description, date, noteId, onDeleteNote }: CreatedNoteProps) {
     const [isCompleted, setIsCompleted] = useState(false);
 
@@ -37,8 +35,7 @@ export default function CreatedNote({ title, description, date, noteId, onDelete
         ));
       };
 
-      const handleAddItem = (noteId: number, text: string) => {
-        throwAway = noteId;
+      const handleAddItem = (_noteId: number, text: string) => {
         const newItem: Item = {
           id: Date.now(),
           text: text,
@@ -47,15 +44,14 @@ export default function CreatedNote({ title, description, date, noteId, onDelete
         setItems([...items, newItem]);
       };
     
-      const handleEditItem = (noteId: number, itemId: number, newText: string) => {
-        throwAway = noteId;
+      const handleEditItem = (_noteId: number, itemId: number, newText: string) => {
+        
         setItems(items.map(item =>
           item.id === itemId ? { ...item, text: newText } : item
         ));
       };
     
-      const handleRemoveItem = (noteId: number, itemId: number) => {
-        throwAway = noteId;
+      const handleRemoveItem = (_noteId: number, itemId: number) => {
         setItems(items.filter(item => item.id !== itemId));
       };
     
